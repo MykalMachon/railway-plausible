@@ -10,7 +10,7 @@ Plausible analytics is a simple, open source, lightweight (< 1 KB) and privacy-f
 
 See [the Plauisble Analytics docsite](https://plausible.io/docs) for a more in-depth explanation of its featureset.
 
-## Quick Start Guide
+## Quick start guide
 
 1. Click the "Deploy on Railway" button above, or [click here](https://railway.app/template/mzYEXO?referralCode=IFlm92)
 2. Do initial setup for the Clickhouse DB service.
@@ -33,8 +33,8 @@ See [the Plauisble Analytics docsite](https://plausible.io/docs) for a more in-d
 ## Additional Resources 
 
 If you'd like to customize your instance of Plausible Analytics, I would recommend reviewing the documentation for both ClickHouse DB, and Plausible Analytics. Here are some links to get you started: 
-
-
+- Plausible Self-Hosting Docs: https://plausible.io/docs/self-hosting-configuration
+- Clickhouse Docker Docs: https://hub.docker.com/r/clickhouse/clickhouse-server/
 
 ## Feedback 
 If you experience any issues or have any feedback at all, [you can create a GitHub issue here](https://github.com/MykalMachon/railway-plausible/issues)
