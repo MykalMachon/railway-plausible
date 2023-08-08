@@ -4,9 +4,9 @@
 
 
 ## What is this template?
-This template makes it trivial to deploy an instance of [Plausible Analytics](https://plausible.io/) with all of it's required services on  [Railway](https://railway.app).
-
 Plausible analytics is a simple, open source, lightweight (< 1 KB) and privacy-friendly alternative to Google Analytics. Plausible is trusted by 10,000+ paying subscribers to deliver their website and business insights.
+
+This template makes it trivial to deploy an instance of [Plausible Analytics](https://plausible.io/) with all of it's required services on [Railway](https://railway.app).
 
 See [the Plauisble Analytics docsite](https://plausible.io/docs) for a more in-depth explanation of its featureset.
 
