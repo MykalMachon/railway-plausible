@@ -15,8 +15,8 @@ See [the Plauisble Analytics docsite](https://plausible.io/docs) for a more in-d
 1. Click the "Deploy on Railway" button above, or [click here](https://railway.app/template/mzYEXO?referralCode=IFlm92)
 2. Follow the setup steps in Railway
 3. Monitor your services as they come up
-    4. If the Plausible Analytics service comes up before Clickhouse DB, you'll need to copy the following into Plausible Analytics `CLICKHOUSE_DATABASE_URL` environment variables: `https://${{"Clickhouse DB".CLICKHOUSE_USER}}:${{"Clickhouse DB".CLICKHOUSE_PASSWORD}}@${{RAILWAY_SERVICE_CLICKHOUSE_DB_URL}}/${{"Clickhouse DB".CLICKHOUSE_DB}}`
-5. Setup your website with Plausible analytics
+    4. If the Plausible Analytics service comes up before Clickhouse DB, you'll need to copy this into the environment variable labelled `CLICKHOUSE_DATABASE_URL` in the Plausible Analytics service: `https://${{"Clickhouse DB".CLICKHOUSE_USER}}:${{"Clickhouse DB".CLICKHOUSE_PASSWORD}}@${{RAILWAY_SERVICE_CLICKHOUSE_DB_URL}}/${{"Clickhouse DB".CLICKHOUSE_DB}}`
+5. Setup your websites with Plausible analytics
     1. Navigate to the domain for your Plausible Analytics service. 
     2. Follow the prompts to create an account on the service 
     3. Follow the prompts to setup tracking on your website. 
@@ -25,12 +25,13 @@ See [the Plauisble Analytics docsite](https://plausible.io/docs) for a more in-d
 ## Additional Resources 
 
 If you'd like to customize your instance of Plausible Analytics, I would recommend reviewing the documentation for both ClickHouse DB, and Plausible Analytics. Here are some links to get you started: 
-- Plausible Self-Hosting Docs: https://plausible.io/docs/self-hosting-configuration
-- Clickhouse Docker Docs: https://hub.docker.com/r/clickhouse/clickhouse-server/
+- Plausible welcome guide: https://plausible.io/docs/
+- Plausible self-hosting docs: https://plausible.io/docs/self-hosting-configuration
+- Clickhouse docker docs: https://hub.docker.com/r/clickhouse/clickhouse-server/
 
 ## Feedback 
 If you experience any issues or have any feedback at all, [you can create a GitHub issue here](https://github.com/MykalMachon/railway-plausible/issues)
 
 ### Known Issues
 1. *Cannot use private networking for Clickhouse DB*: unfortunately, Plausible Analytics does not seem to support IPV6 routing for the ClickHouse Database. This means we cannot use Railway's private networking features, and have to expose our Clickhouse Database to the public internet for it to be usable.
-2. It seems like when the Plausible Analytics service is provisioned before the Clickhouse DB service, you have to re-set the environment variables for clickhosue in Plausible Analytics. This can be done by pasting the following value into the environment variable labeled `CLICKHOUSE_DATABASE_URL` in the Plausible Analytics service: `https://${{"Clickhouse DB".CLICKHOUSE_USER}}:${{"Clickhouse DB".CLICKHOUSE_PASSWORD}}@${{RAILWAY_SERVICE_CLICKHOUSE_DB_URL}}/${{"Clickhouse DB".CLICKHOUSE_DB}}`
+2. It seems like when the Plausible Analytics service is provisioned before the Clickhouse DB service, you have to re-set the environment variables that reference the Clickhoues DB Service in the Plausible Analytics service. This can be done by pasting the following value into the environment variable labeled `CLICKHOUSE_DATABASE_URL` in the Plausible Analytics service: `https://${{"Clickhouse DB".CLICKHOUSE_USER}}:${{"Clickhouse DB".CLICKHOUSE_PASSWORD}}@${{RAILWAY_SERVICE_CLICKHOUSE_DB_URL}}/${{"Clickhouse DB".CLICKHOUSE_DB}}`
