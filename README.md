@@ -17,7 +17,7 @@ See [the Plausible Analytics docsite](https://plausible.io/docs) for a more in-d
 3. Monitor your services as they come up
     - If the Plausible Analytics service is provisioned before the ClickHouse service, you have to re-set the environment variables that reference the ClickHouse service.
         - Once the ClickHouse service is up, navigate to the Plausible Analytics service, and select the "Variables" tab. 
-        - find and click the "edit" button on the `CLICKHOUSE_DATABASE_URL` environment variable in the Plausible Analytics service. 
+        - find and click the "edit" button on the `CLICKHOUSE_DATABASE_URL` environment variable.
         - Re-save the variable without changing the contents. 
         - This should trigger a redeploy with the proper environment variables.  
 5. Setup your websites with Plausible analytics
@@ -39,6 +39,6 @@ If you experience any issues or have any feedback at all, [you can create a GitH
 ### Known Issues
 - When the Plausible Analytics service is provisioned before the ClickHouse service, you have to re-set the environment variables that reference the ClickHouse service.
     - Once the ClickHouse service is up, navigate to the Plausible Analytics service, and select the "Variables" tab. 
-    - find and click the "edit" button on the `CLICKHOUSE_DATABASE_URL` environment variable in the Plausible Analytics service. 
+    - find and click the "edit" button on the `CLICKHOUSE_DATABASE_URL` environment variable.
     - Re-save the variable without changing the contents. 
     - This should trigger a redeploy with the proper environment variables.  
