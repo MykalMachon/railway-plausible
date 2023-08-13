@@ -4,11 +4,11 @@
 
 
 ## What is this template?
-Plausible analytics is a simple, open source, lightweight (< 1 KB) and privacy-friendly alternative to Google Analytics. Plausible is trusted by 10,000+ paying subscribers to deliver their website and business insights.
+Plausible Analytics is a simple, open-source, lightweight (< 1 KB) and privacy-friendly alternative to Google Analytics. Plausible is trusted by 10,000+ paying subscribers to deliver their website and business insights.
 
 This template makes it trivial to deploy an instance of [Plausible Analytics](https://plausible.io/) with all of it's required services on [Railway](https://railway.app).
 
-See [the Plauisble Analytics docsite](https://plausible.io/docs) for a more in-depth explanation of its featureset.
+See [the Plausible Analytics docsite](https://plausible.io/docs) for a more in-depth explanation of its feature set.
 
 ## Quick start guide
 
@@ -23,7 +23,7 @@ See [the Plauisble Analytics docsite](https://plausible.io/docs) for a more in-d
 5. Setup your websites with Plausible analytics
     1. Navigate to the domain for your Plausible Analytics service. 
     2. Follow the prompts to create an account on the service 
-    3. Follow the prompts to setup tracking on your website. 
+    3. Follow the prompts to set up tracking on your website. 
     4. For more information on how to use Plausible, [check their site](https://plausible.io/docs).
 
 ## Additional Resources 
@@ -31,7 +31,7 @@ See [the Plauisble Analytics docsite](https://plausible.io/docs) for a more in-d
 If you'd like to customize your instance of Plausible Analytics, I would recommend reviewing the documentation for both ClickHouse DB, and Plausible Analytics. Here are some links to get you started: 
 - Plausible welcome guide: https://plausible.io/docs/
 - Plausible self-hosting docs: https://plausible.io/docs/self-hosting-configuration
-- Clickhouse docker docs: https://hub.docker.com/r/clickhouse/clickhouse-server/
+- ClickHouse docker docs: https://hub.docker.com/r/clickhouse/clickhouse-server/
 
 ## Feedback 
 If you experience any issues or have any feedback at all, [you can create a GitHub issue here](https://github.com/MykalMachon/railway-plausible/issues)
