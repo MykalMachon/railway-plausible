@@ -27,7 +27,7 @@ See [the Plausible Analytics docsite](https://plausible.io/docs) for a more in-d
     3. Follow the prompts to set up tracking on your website. 
     4. For more information on how to use Plausible, [check their site](https://plausible.io/docs).
   
-## Optional Variables 
+## Optional variables 
 There are several "optional" environment variables for this template. This variables aren't needed to get Plausible Analytics running on Railway, but they add some niceties.
 
 - **SMTP Mailer Setup**: these optional values enable your Plausible Analytics instance to send you emails. These can be weekly updates, or timely notifications if your site is getting a spike in traffic. [You can read more about these settings on Plausible Analytics docsite here.](https://plausible.io/docs/self-hosting-configuration#mailersmtp-setup)
@@ -40,7 +40,7 @@ There are several "optional" environment variables for this template. This varia
     - `SMTP_HOST_SSL_ENABLED`: If your SMTP server support TLS encrypted traffic, enable it here (i.e true, false) 
 
   
-## Project Structure & Services
+## Project structure & services
 This template is made up of three "services": 
 
 - [Plausible Analytics](https://plausible.io/): the primary application.
@@ -53,7 +53,7 @@ This template is made up of three "services":
     - PostgreSQL is used to store user data, settings, and metadata for Plausible Analytics.
     - PostgreSQL is ran as one of [Railway's one-click database services](https://docs.railway.app/develop/services#database-services) and is just a standard PostgreSQL database.    
 
-## Additional Resources 
+## Additional resources 
 
 If you'd like to customize your instance of Plausible Analytics, I would recommend reviewing the documentation for both ClickHouse DB, and Plausible Analytics. Here are some links to get you started: 
 - Plausible welcome guide: https://plausible.io/docs/
@@ -63,7 +63,7 @@ If you'd like to customize your instance of Plausible Analytics, I would recomme
 ## Feedback 
 If you experience any issues or have any feedback at all, [you can create a GitHub issue here](https://github.com/MykalMachon/railway-plausible/issues)
 
-### Known Issues
+### Known issues
 - When the Plausible Analytics service is provisioned before the ClickHouse service, you have to re-set the environment variables that reference the ClickHouse service.
     - Once the ClickHouse service is up, navigate to the Plausible Analytics service, and select the "Variables" tab. 
     - Find and click the "edit" button on the `CLICKHOUSE_DATABASE_URL` environment variable.
